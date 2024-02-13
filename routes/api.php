@@ -17,3 +17,11 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+
+Route::get('/annonces', function(){
+    return 'Liste des Annonces.';
+});
+
+Route::get('/items', function () {
+    return view('items');
+});
